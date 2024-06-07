@@ -1,23 +1,28 @@
-import React from 'react'
-import {useEffect} from 'react'
-import moleImage from "../mole.png"
+import { useEffect } from 'react'
 
-function Mole(props){
+// Import Img
+import moleImg from '../mole.png'
+
+const Mole = (props) => {
+
+    // useEffect for timer random
     useEffect(() => {
-        let randSeconds = Math.ceil(Math.random() * 5000)
+        let randSeconds = Math.ceil(Math.random() * 10000)
         let timer = setTimeout(() => {
-            props.setDisplayMole(false)
+            props.toggle(false)
         }, randSeconds)
         return () => clearTimeout(timer)
     })
 
     return (
         <div>
-            <img style={{'width': '30vw'}}
-            src={moleImage}
+            <img 
+            style={{'width': '30vw'}} 
+            src={moleImg} 
             onClick={props.handleClick} />
         </div>
     )
 }
 
 export default Mole
+

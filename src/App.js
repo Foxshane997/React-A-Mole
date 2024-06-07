@@ -1,10 +1,13 @@
 import './App.css';
 import { useState } from 'react'
+
+// import from file
 import MoleContainer from './Components/MoleContainer';
 
 function App(){
     let [score, setScore] = useState(0)
 
+    // randomizer for mole img iterated through the array
     const createMoleHill = () => {
         let hills = []
         for (let i = 0; i < 9; i++) {
