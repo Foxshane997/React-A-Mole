@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/React-A-Mole/static/css/main.f855e6bc.css",
+    "main.js": "/React-A-Mole/static/js/main.d70284e9.js",
+    "static/media/mole.png": "/React-A-Mole/static/media/mole.ce78b3ad3e816f5c1957.png",
+    "index.html": "/React-A-Mole/index.html",
+    "main.f855e6bc.css.map": "/React-A-Mole/static/css/main.f855e6bc.css.map",
+    "main.d70284e9.js.map": "/React-A-Mole/static/js/main.d70284e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.d70284e9.js"
+  ]
+}
