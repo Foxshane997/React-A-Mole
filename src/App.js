@@ -1,40 +1,35 @@
 import './App.css';
-import { useState } from 'react'
-
-// import from file
+import { useState } from 'react';
 import MoleContainer from './Components/MoleContainer';
 
-function App(){
-    let [score, setScore] = useState(0)
+function App() {
+    const [score, setScore] = useState(0);
 
-    // randomizer for mole img iterated through the array
+    // Randomizer for mole img iterated through the array
     const createMoleHill = () => {
-        let hills = []
+        let hills = [];
         for (let i = 0; i < 9; i++) {
             hills.push(
                 <MoleContainer
-                key={i}
-                setScore={setScore}
-                score={score} />
-            )
+                    key={i}
+                    setScore={setScore}
+                    score={score} />
+            );
         }
-    
         return (
-            <div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                 {hills}
             </div>
-        )
+        );
     }
 
     return (
         <div className="App">
             <h1>React-a-Mole!</h1>
-            {score}
+            <div className="score">Score: {score}</div>
             {createMoleHill()}
         </div>
-    )
+    );
 }
 
-export default App
-
-
+export default App;
